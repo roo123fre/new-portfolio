@@ -1,50 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-        <a href="./icons/logo.svg" class="header__logo"></a>
+      <div class="container">
         <ul class="header__list">
-            <li class="header__item">
-                <a href="#" class="header__text">Про мене</a>
-            </li>
-            <li class="header__item">
-                <a href="#" class="header__text">Навички</a>
-            </li>
-            <li class="header__item">
-                <a href="#" class="header__text">Послуги</a>
-            </li>
-            <li class="header__item">
-                <a href="#" class="header__text">Портфоліо</a>
-            </li>
-            <li class="header__item">
-                <a href="#" class="header__text">Відгуки</a>
-            </li>
-            <li class="header__item">
-                <a href="#" class="header__text">Контакти</a>
-            </li>
+          <li class="header__item">
+            <a href="#" class="header__logo"
+              ><img src="./images/logo.png" alt="L Logo"
+            /></a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__text">Про мене</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__text">Навички</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__text">Послуги</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__text">Портфоліо</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__text">Відгуки</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__text">Контакти</a>
+          </li>
         </ul>
-    </div>
+      </div>
     </header>
     <section class="hero">
-        <div class="container">
-            <h1 class="hero__title">Привіт, Я Данеіл Кібіч</h1>
-            <p class="hero__subtitle">front-end розробник</p>
+      <div class="container">
+        <div class="hero__text">
+          <h1 class="hero__title">Привіт, Я Данеіл Кібіч</h1>
+          <p class="hero__subtitle">front-end розробник</p>
         </div>
+        <a href="#" class="hero__works">дивитись роботи</a>
+      </div>
     </section>
-    <section class="about"></section>
-    <section class="skills"></section>
-    <section class="service"></section>
-    <section class="protfolio"></section>
-    <section class="stats"></section>
-    <section class="contacts"></section>
-    <footer class="footer"></footer>
-</body>
+    <section class="about">
+      <div class="container">
+        <p class="about__title">Про мене</p>
+        <p class="text__about">
+          Вітаю всіх на своєму сайті! Мене звуть Іван, я з Києва. Займаюся
+          фронтенд-розробкою понад рік. До розробки займався нелюбимою справою,
+          ходив на нелюбиму роботу, не міг зрозуміти, за що взятися, щоб справа
+          приносила задоволення і гроші, поки не наткнувся на один цікавий курс.
+        </p>
+        <p class="text__about">
+          З того часу пройшов вогонь, воду та мідні труби. Навчання давалося
+          по-різному: десь легше, десь складніше. Щоденна робота над навичками
+          та старанність, з якою я підходив до навчання, вже через кілька
+          місяців принесли плоди – я взяв перше замовлення на фрілансі. З
+          відгуками клієнтів та прикладами робіт можна ознайомитись нижче.
+        </p>
+      </div>
+    </section>
+    <section class="skills">
+      <div class="container">
+        <p class="about__title">Вміння</p>
+        <img class="skills__image" src="./images/me.png" alt="my photo" />
+        <div class="skills-summary">
+          <h5 class="skills-title">HTML</h5>
+        </div>
+        <div class="skills-summary">
+          <div class="progress-bar">
+            <div style="width: 67%" class="loaded loaded"></div>
+            <div class="unloaded unloaded"></div>
+          </div>
+        </div>
+        <div class="skills-summary">
+          <h5 class="skills-title">CSS</h5>
+        </div>
+        <div class="skills-summary">
+          <div class="progress-bar">
+            <div style="width: 82%" class="loaded loaded-content"></div>
+            <div class="unloaded unloaded-content"></div>
+          </div>
+        </div>
+        <div class="skills-summary">
+          <h5 class="skills-title">JS</h5>
+        </div>
+        <div class="skills-summary">
+          <div class="progress-bar">
+            <div class="loaded loaded-disign"></div>
+            <div class="unloaded unloaded-disign"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <div class="container">
+        <h1 class="about__title service__title">Послуги</h1>
+        <div class="service__list">
+          <li class="service__item programming">
+            <p class="service__text">Вёрстка проектов</p>
+            <p class="service__about">
+              Сделаю качественную вёрстку вашего проекта по предоставленному
+              макету или примеру
+            </p>
+          </li>
+          <li class="service__item developers">
+            <p class="service__text">Посадка на CMS</p>
+            <p class="service__about">
+              Интегрирую ваш проект в одну из популярных CMS
+            </p>
+          </li>
+          <li class="service__item chatbox">
+            <p class="service__text">Поддержка сайта</p>
+            <p class="service__about">
+              Гарантирую поддержку вашего сайта на протяжениии 30 дней после
+              сдача проекта
+            </p>
+          </li>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="container">
+        <h1 class="portfolio__title">Мои работы</h1>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <img class="portfolio__image" src="./images/img1.png" alt="img1" />
+          </li>
+          <li class="portfolio__item">
+            <img class="portfolio__image" src="./images/img2.png" alt="img2" />
+          </li>
+          <li class="portfolio__item">
+            <img class="portfolio__image" src="./images/img3.png" alt="img3" />
+          </li>
+          <li class="portfolio__item">
+            <img class="portfolio__image" src="./images/img4.png" alt="img4" />
+          </li>
+          <li class="portfolio__item">
+            <img class="portfolio__image" src="./images/img5.png" alt="img5" />
+          </li>
+          <li class="portfolio__item">
+            <img class="portfolio__image" src="./images/img6.png" alt="img6" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="stats">
+      <div class="container">
+        <ul class="stats__list">
+          <li class="stats__item worked">
+            <p class="stats__text">Выполненных работ</p>
+            <h1 class="stats__number">56</h1>
+          </li>
+          <li class="stats__item clients">
+            <p class="stats__text">Довольных клиентов</p>
+            <h1 class="stats__number">23</h1>
+          </li>
+          <li class="stats__item coffee">
+            <p class="stats__text">Выпито чашек кофе</p>
+            <h1 class="stats__number">477</h1>
+          </li>
+          <li class="stats__item feedbacks">
+            <p class="stats__text">Всего отзывов</p>
+            <h1 class="stats__number">48</h1>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <h1 class="about__title contacts__title">Контакты</h1>
+        <p class="contacts__text">
+          Связаться со мной можно, воспользовавшись контактной формой или
+          напрямую по номеру телефона, email, в соцсетях:
+        </p>
+        <a href="#" class="contacts__number">+38 (050) 111 11 11</a>
+        <a href="#" class="contacts__email">frontend-monster@email.com</a>
+        <p class="instagram"></p>
+        <p class="facebook"></p>
+        <p class="telegram"></p>
+        <div class="contacts__information">
+          <ul class="information__list">
+            <li class="information__item">Ваше имя</li>
+            <input class="name" type="text" placeholder="Иван">
+            <li class="information__item">Номер телефона</li>
+            <input class="number" type="text" placeholder="+380501111111">
+            <li class="information__item">Ваше сообщение</li>
+            <input class="comment" type="text" placeholder="Текст вашего сообщения">
+          </ul>
+          <a href="#" class="information__button">Отправить</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <img src="./images/logo.png" class="footer__logo"></img>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
 </html>
