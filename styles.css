@@ -53,7 +53,7 @@ body {
   width: 100%;
   z-index: 2;
   background-color: #2352de;
-  padding: 50px auto;
+  padding: 15px 0;
 }
 .header__logo {
   display: block;
@@ -90,6 +90,7 @@ body {
   z-index: 1;
   width: 100%;
   margin-bottom: 140px;
+  padding-top: 100px;
 }
 .hero::before {
   content: "";
@@ -102,11 +103,14 @@ body {
   z-index: -1;
 }
 .hero__text {
-  margin-left: 100px;
-  z-index: 2;
+  max-width: 640px;
+  width: 100%;
+  height: calc(100vh - 218px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .hero__title {
-  padding-top: 345px;
   font-family: "Open Sans", sans-serif;
   margin: 0;
 }
@@ -129,11 +133,13 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: #ffffff;
-  margin-top: 120px;
   text-align: center;
 }
 .hero__works::before {
   content: "";
+  animation-name: arrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
   align-items: center;
   position: absolute;
   border-radius: 2px;
@@ -146,6 +152,9 @@ body {
 }
 .hero__works::after {
   content: "";
+  animation-name: arrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
   align-items: center;
   position: absolute;
   border-radius: 2px;
@@ -155,6 +164,17 @@ body {
   left: 49%;
   background-color: #fff;
   transform: rotate(45deg);
+}
+@keyframes arrow {
+  0% {
+    top: 40px;
+  }
+  50% {
+    top: 70px;
+  }
+  100% {
+    top: 40px;
+  }
 }
 /**************************/
 /**********about***********/
@@ -507,13 +527,6 @@ body {
   background-image: url(./icons/telegram.svg);
   background-repeat: no-repeat;
 }
-.contacts__information {
-  max-width: 540px;
-  width: 100%;
-  max-height: 322px;
-  height: 100%;
-  margin-right: 0;
-}
 .information__list {
   display: flex;
   flex-direction: column;
@@ -527,6 +540,9 @@ body {
   font-size: 14px;
   line-height: 130%;
   color: #333333;
+}
+input{
+  margin-bottom: 30px;
 }
 .name {
   width: 255px;
@@ -554,6 +570,9 @@ input {
   line-height: 130%;
   color: #9c9cab;
 }
+.information__name-home{
+  display: flex;
+}
 .information__button {
   padding: 12px 24px;
   background-color: #2352de;
@@ -563,6 +582,12 @@ input {
   font-size: 18px;
   line-height: 130%;
   color: #ffffff;
+}
+.contacts__inner{
+  display: flex;
+}
+.information__input{
+  margin-right: 15px;
 }
 /***********************/
 /**********footer*******/

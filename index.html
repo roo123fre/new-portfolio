@@ -184,31 +184,51 @@
     <section class="contacts">
       <div class="container">
         <h1 class="about__title contacts__title">Контакты</h1>
-        <p class="contacts__text">
-          Связаться со мной можно, воспользовавшись контактной формой или
-          напрямую по номеру телефона, email, в соцсетях:
-        </p>
-        <a href="#" class="contacts__number">+38 (050) 111 11 11</a>
-        <a href="#" class="contacts__email">frontend-monster@email.com</a>
-        <p class="instagram"></p>
-        <p class="facebook"></p>
-        <p class="telegram"></p>
-        <div class="contacts__information">
-          <ul class="information__list">
-            <li class="information__item">Ваше имя</li>
-            <input class="name" type="text" placeholder="Иван">
-            <li class="information__item">Номер телефона</li>
-            <input class="number" type="text" placeholder="+380501111111">
-            <li class="information__item">Ваше сообщение</li>
-            <input class="comment" type="text" placeholder="Текст вашего сообщения">
-          </ul>
-          <a href="#" class="information__button">Отправить</a>
+        <div class="contacts__inner">
+          <div class="contacts__social">
+            <p class="contacts__text">
+              Связаться со мной можно, воспользовавшись контактной формой или
+              напрямую по номеру телефона, email, в соцсетях:
+            </p>
+            <a href="#" class="contacts__number">+38 (050) 111 11 11</a>
+            <a href="#" class="contacts__email">frontend-monster@email.com</a>
+            <p class="instagram"></p>
+            <p class="facebook"></p>
+            <p class="telegram"></p>
+          </div>
+          <div class="contacts__form">
+            <ul class="information__list">
+              <div class="information__name-home">
+                <div class="information__input">
+                  <li class="information__item">Ваше имя</li>
+                  <input class="name" type="text" placeholder="Иван" />
+                </div>
+                <div class="information__input">
+                  <li class="information__item">Номер телефона</li>
+                  <input
+                    class="number"
+                    type="text"
+                    placeholder="+380501111111"
+                  />
+                </div>
+              </div>
+              <li class="information__item">Ваше сообщение</li>
+              <input
+                class="comment"
+                type="text"
+                placeholder="Текст вашего сообщения"
+              />
+            </ul>
+            <a href="#" class="information__button">Отправить</a>
+          </div>
         </div>
       </div>
     </section>
     <footer class="footer">
       <div class="container">
-        <img src="./images/logo.png" class="footer__logo"></img>
+        <a href="#" class="footer__logo"
+          ><img src="./images/logo.png" alt="L Logo"
+        /></a>
       </div>
     </footer>
     <script src="./index.js"></script>
