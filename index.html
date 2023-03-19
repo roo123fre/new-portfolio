@@ -197,28 +197,39 @@
             <p class="telegram"></p>
           </div>
           <div class="contacts__form">
-            <ul class="information__list">
+            <form class="information__list">
               <div class="information__name-home">
                 <div class="information__input">
-                  <li class="information__item">Ваше имя</li>
-                  <input class="name" type="text" placeholder="Иван" />
+                  <label class="information__item"
+                    >Ваше имя
+                    <input class="name" type="text" placeholder="Иван" />
+                  </label>
                 </div>
                 <div class="information__input">
-                  <li class="information__item">Номер телефона</li>
-                  <input
-                    class="number"
-                    type="text"
-                    placeholder="+380501111111"
-                  />
+                  <label class="information__item"
+                    >Номер телефона
+                    <input
+                      class="name"
+                      type="text"
+                      placeholder="+380501111111"
+                    />
+                  </label>
                 </div>
               </div>
-              <li class="information__item">Ваше сообщение</li>
-              <input
-                class="comment"
-                type="text"
-                placeholder="Текст вашего сообщения"
-              />
-            </ul>
+              <label class="information__item"
+                >Ваше сообщение
+                <textarea
+                  class="comment"
+                  placeholder="Текст вашего сообщения"
+                  name="sitelink"
+                  ?php
+                  if($siteLink_val)
+                  echo
+                  $siteLink_val;
+                  ?
+                ></textarea>
+              </label>
+            </form>
             <a href="#" class="information__button">Отправить</a>
           </div>
         </div>

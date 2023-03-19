@@ -527,6 +527,11 @@ body {
   background-image: url(./icons/telegram.svg);
   background-repeat: no-repeat;
 }
+.contacts__form{
+  max-width: 540px;
+  width: 100%;
+  
+}
 .information__list {
   display: flex;
   flex-direction: column;
@@ -540,8 +545,10 @@ body {
   font-size: 14px;
   line-height: 130%;
   color: #333333;
+  max-width: 540px;
+  width: 100%;
 }
-input{
+input {
   margin-bottom: 30px;
 }
 .name {
@@ -549,6 +556,8 @@ input{
   height: 44px;
   background: #f6f6f8;
   border: none;
+  padding-left: 10px;
+  margin-right: -25px;
 }
 .number {
   width: 255px;
@@ -557,11 +566,27 @@ input{
   border: none;
 }
 .comment {
-  width: 540px;
-  height: 115px;
-  background: #f6f6f8;
+  max-width: 540px;
+  width: 100%;
+  min-height: 115px;
+  max-height: 135px;
+  padding: 13px 15px;
+  font-size: 14px;
+  line-height: 130%;
+  color: #9c9cab;
+  outline: none;
+  margin-top: 10px;
+  background-color: #f6f6f8;
   border: none;
+  resize: vertical;
+  margin-bottom: 40px;
 }
+.comment::placeholder {
+  font-size: 14px;
+  line-height: 130%;
+  color: #9c9cab;
+}
+
 input {
   font-family: "Open Sans";
   font-style: normal;
@@ -570,8 +595,9 @@ input {
   line-height: 130%;
   color: #9c9cab;
 }
-.information__name-home{
+.information__name-home {
   display: flex;
+  gap: 55px;
 }
 .information__button {
   padding: 12px 24px;
@@ -583,12 +609,10 @@ input {
   line-height: 130%;
   color: #ffffff;
 }
-.contacts__inner{
+.contacts__inner {
   display: flex;
 }
-.information__input{
-  margin-right: 15px;
-}
+
 /***********************/
 /**********footer*******/
 /***********************/
