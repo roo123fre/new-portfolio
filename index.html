@@ -48,7 +48,7 @@
         </ul>
       </div>
     </header>
-     
+
     <section class="hero">
       <div class="container">
         <div class="hero__text">
@@ -58,7 +58,7 @@
         <a href="#" class="hero__works">дивитись роботи</a>
       </div>
     </section>
-    
+
     <section class="about">
       <div class="container">
         <p class="about__title">Про мене</p>
@@ -77,41 +77,45 @@
         </p>
       </div>
     </section>
-    
+
     <section class="skills">
       <div class="container">
         <p class="about__title">Вміння</p>
-        <img class="skills__image" src="./images/me.png" alt="my photo" />
-        <div class="skills-summary">
-          <h5 class="skills-title">HTML</h5>
-        </div>
-        <div class="skills-summary">
-          <div class="progress-bar">
-            <div style="width: 67%" class="loaded loaded"></div>
-            <div class="unloaded unloaded"></div>
-          </div>
-        </div>
-        <div class="skills-summary">
-          <h5 class="skills-title">CSS</h5>
-        </div>
-        <div class="skills-summary">
-          <div class="progress-bar">
-            <div style="width: 82%" class="loaded loaded-content"></div>
-            <div class="unloaded unloaded-content"></div>
-          </div>
-        </div>
-        <div class="skills-summary">
-          <h5 class="skills-title">JS</h5>
-        </div>
-        <div class="skills-summary">
-          <div class="progress-bar">
-            <div class="loaded loaded-disign"></div>
-            <div class="unloaded unloaded-disign"></div>
+        <div class="skills__portfolio">
+          <img class="skills__image" src="./images/me.png" alt="my photo" />
+          <div class="skills__progress">
+            <div class="skills-summary">
+              <h5 class="skills-title">HTML</h5>
+            </div>
+            <div class="skills-summary">
+              <div class="progress-bar">
+                <div style="width: 67%" class="loaded loaded"></div>
+                <div class="unloaded unloaded"></div>
+              </div>
+            </div>
+            <div class="skills-summary">
+              <h5 class="skills-title">CSS</h5>
+            </div>
+            <div class="skills-summary">
+              <div class="progress-bar">
+                <div style="width: 82%" class="loaded loaded-content"></div>
+                <div class="unloaded unloaded-content"></div>
+              </div>
+            </div>
+            <div class="skills-summary">
+              <h5 class="skills-title">JS</h5>
+            </div>
+            <div class="skills-summary">
+              <div class="progress-bar">
+                <div class="loaded loaded-disign"></div>
+                <div class="unloaded unloaded-disign"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-     
+
     <section class="service">
       <div class="container">
         <h1 class="about__title service__title">Послуги</h1>
@@ -139,7 +143,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="portfolio">
       <div class="container">
         <h1 class="portfolio__title">Мои работы</h1>
@@ -165,30 +169,38 @@
         </ul>
       </div>
     </section>
-    
+
     <section class="stats">
       <div class="container">
         <ul class="stats__list">
-          <li class="stats__item worked">
-            <p class="stats__text">Выполненных работ</p>
-            <h1 class="stats__number">56</h1>
-          </li>
-          <li class="stats__item clients">
-            <p class="stats__text">Довольных клиентов</p>
-            <h1 class="stats__number">23</h1>
-          </li>
-          <li class="stats__item coffee">
-            <p class="stats__text">Выпито чашек кофе</p>
-            <h1 class="stats__number">477</h1>
-          </li>
-          <li class="stats__item feedbacks">
-            <p class="stats__text">Всего отзывов</p>
-            <h1 class="stats__number">48</h1>
-          </li>
+          <div class="stats__count">
+            <li class="stats__item worked">
+              <p class="stats__text">Выполненных работ</p>
+              <h1 class="stats__number">56</h1>
+            </li>
+          </div>
+          <div class="stats__count">
+            <li class="stats__item clients">
+              <p class="stats__text">Довольных клиентов</p>
+              <h1 class="stats__number">23</h1>
+            </li>
+          </div>
+          <div class="stats__count">
+            <li class="stats__item coffee">
+              <p class="stats__text">Выпито чашек кофе</p>
+              <h1 class="stats__number">477</h1>
+            </li>
+          </div>
+          <div class="stats__count feedbacks__count">
+            <li class="stats__item feedbacks">
+              <p class="stats__text">Всего отзывов</p>
+              <h1 class="stats__number">48</h1>
+            </li>
+          </div>
         </ul>
       </div>
     </section>
-    
+
     <section class="contacts">
       <div class="container">
         <h1 class="about__title contacts__title">Контакты</h1>
@@ -208,42 +220,31 @@
             <form class="information__list">
               <div class="information__name-home">
                 <div class="information__input">
-                  <label class="information__item"
-                    >Ваше имя
-                    <input class="name" type="text" placeholder="Иван" />
-                  </label>
+                  <label class="information__item">Ваше имя </label>
+                  <input class="name" type="text" placeholder="Иван" />
                 </div>
                 <div class="information__input">
-                  <label class="information__item"
-                    >Номер телефона
-                    <input
-                      class="name"
-                      type="text"
-                      placeholder="+380501111111"
-                    />
-                  </label>
+                  <label class="information__item">Номер телефона </label>
+                  <input class="name" type="text" placeholder="+380501111111" />
                 </div>
               </div>
-              <label class="information__item"
-                >Ваше сообщение
-                <textarea
-                  class="comment"
-                  placeholder="Текст вашего сообщения"
-                  name="sitelink"
-                  ?php
-                  if($siteLink_val)
-                  echo
-                  $siteLink_val;
-                  ?
-                ></textarea>
-              </label>
+              <label class="information__item">Ваше сообщение </label>
+              <textarea
+                class="comment"
+                placeholder="Текст вашего сообщения"
+                name="sitelink"
+                ?php
+                if($siteLink_val)
+                echo
+                $siteLink_val;
+                ?
+              ></textarea>
             </form>
             <a href="#" class="information__button">Отправить</a>
           </div>
         </div>
       </div>
     </section>
-    <!--
     <footer class="footer">
       <div class="container">
         <a href="#" class="footer__logo"
@@ -251,6 +252,5 @@
         /></a>
       </div>
     </footer>
-    -->
   </body>
 </html>
