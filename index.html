@@ -18,35 +18,31 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header ">
       <div class="container">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="#" class="header__logo"
-              ><img src="./images/logo.png" alt="L Logo"
-            /></a>
+      <nav class="header__nav">
+        <a class="header__nav-link logotype" href="#">
+        </a>
+        <ul class="header__nav-list active menu__scroll">
+          <li class="header_nav_item">
+            <a class="header__nav-link" href="#"> Home</a>
           </li>
-
-          <li class="header__item">
-            <a href="#" class="header__text">Про мене</a>
+          <li class="header_nav_item">
+            <a class="header__nav-link" href="#"> About </a>
           </li>
-          <li class="header__item">
-            <a href="#" class="header__text">Навички</a>
+          <li class="header_nav_item">
+            <a class="header__nav-link" href="#"> Skills </a>
           </li>
-          <li class="header__item">
-            <a href="#" class="header__text">Послуги</a>
+          <li class="header_nav_item">
+            <a class="header__nav-link" href="#"> Portfolio </a>
           </li>
-          <li class="header__item">
-            <a href="#" class="header__text">Портфоліо</a>
-          </li>
-          <li class="header__item">
-            <a href="#" class="header__text">Відгуки</a>
-          </li>
-          <li class="header__item">
-            <a href="#" class="header__text">Контакти</a>
+          <li class="header_nav_item">
+            <a class="header__nav-link" href="#"> Contact </a>
           </li>
         </ul>
-      </div>
+        <button class="menu menu__active button__active" href="#"></button>
+      </nav>
+    </div>
     </header>
 
     <section class="hero">
@@ -146,7 +142,7 @@
 
     <section class="portfolio">
       <div class="container">
-        <h1 class="portfolio__title">Мои работы</h1>
+        <h1 class="about__title">Мои работы</h1>
         <ul class="portfolio__list">
           <li class="portfolio__item">
             <img class="portfolio__image" src="./images/img1.png" alt="img1" />
@@ -253,4 +249,5 @@
       </div>
     </footer>
   </body>
+  <script src="./index.js"></script>
 </html>
