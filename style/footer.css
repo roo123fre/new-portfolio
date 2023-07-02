@@ -1,0 +1,160 @@
+.footer {
+    background-color: #343740;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    padding: 50px 400px;
+}
+
+@media (max-width:920px){
+    .footer__logo{
+        padding: 50px 355px;
+    }
+}
+
+@media (max-width:560px){
+    .footer__logo{
+        padding: 50px 180px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .service__list {
+        flex-direction: column;
+    }
+
+    .programming::before {
+        display: none;
+    }
+
+    .developers::before {
+        display: none;
+    }
+
+    .chatbox::before {
+        display: none;
+    }
+
+    .service__about {
+        margin-bottom: 30px;
+    }
+
+    .stats__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .worked::before {
+        display: none;
+    }
+
+    .clients::before {
+        display: none;
+    }
+
+    .coffee::before {
+        display: none;
+    }
+
+    .feedbacks::before {
+        display: none;
+    }
+
+    .contacts__social {
+        display: none;
+    }
+
+    .contacts__form {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .service {
+        display: flex;
+    }
+
+    .service__text {
+        font-size: 20px;
+    }
+
+    .portfolio__title::before {
+        left: 210px;
+    }
+
+    .portfolio__image {
+        margin-left: 40%;
+    }
+
+    .stats__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-evenly;
+    }
+
+    .stats__count {
+        margin-bottom: 10px;
+        padding: 100px 40px 10px 50px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .skills__portfolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio__title::before {
+        left: 100px;
+    }
+
+    .portfolio__image {
+        margin-left: 15%;
+    }
+
+    .information__name-home {
+        flex-wrap: wrap;
+    }
+
+    .information__input {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .name {
+        max-width: 240px;
+    }
+
+    .footer__logo {
+        padding: 40px 170px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .text__about {
+        font-size: 15px;
+    }
+
+    .portfolio__title::before {
+        display: none;
+    }
+
+    .portfolio__image {
+        width: 270px;
+        margin-left: 10px;
+    }
+
+    .footer__logo {
+        padding: 40px 60px;
+    }
+
+    .header__item {
+        margin-left: 40px;
+    }
+}

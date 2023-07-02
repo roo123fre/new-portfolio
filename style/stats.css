@@ -1,0 +1,135 @@
+.stats {
+    margin-bottom: 214px;
+}
+
+.stats__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.stats__count {
+    background-color: #dbdbed;
+    padding: 110px 30px 0 30px;
+    margin: 0 16px;
+}
+
+.feedbacks__count {
+    padding: 110px 40px 50px 40px;
+}
+
+.stats__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #333333;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.stats__number {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 100%;
+    color: #333333;
+}
+
+.worked {
+    position: relative;
+}
+
+.worked::before {
+    content: "";
+    position: absolute;
+    width: 98px;
+    height: 80px;
+    left: 30px;
+    top: -100px;
+    background-image: url('/icons/works.svg');
+    background-repeat: no-repeat;
+}
+
+.clients {
+    position: relative;
+}
+
+.clients::before {
+    content: "";
+    position: absolute;
+    width: 92px;
+    height: 80px;
+    left: 35px;
+    top: -100px;
+    background-image: url('/icons/clients.svg');
+    background-repeat: no-repeat;
+}
+
+.coffee {
+    position: relative;
+}
+
+.coffee::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 45px;
+    top: -100px;
+    background-image: url('/icons/coffee.svg');
+    background-repeat: no-repeat;
+}
+
+.feedbacks {
+    position: relative;
+}
+
+.feedbacks::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 20px;
+    top: -100px;
+    background-image: url('/icons/review.svg');
+    background-repeat: no-repeat;
+}
+
+@media (max-width:560px) {
+    .stats__list {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .worked::before {
+        left: 170px;
+    }
+
+    .clients::before {
+        left: 174px;
+    }
+
+    .coffee::before {
+        left: 185px;
+    }
+
+    .feedbacks::before {
+        left: 172px;
+    }
+}
+
+@media (max-width:560px){
+    .contacts__inner{
+        flex-wrap: wrap;
+    }
+    .contacts__email{
+        margin-bottom: 30px;
+    }
+    .contacts__number{
+        margin-bottom: 20px;
+    }
+}
