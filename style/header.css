@@ -1,12 +1,25 @@
 .header {
+    position: relative;
     display: flex;
     justify-content: space-between;
-
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
 }
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: 0;
+    bottom: 0px;
+    background-color: rgba(35, 82, 222, 0.4);
+    z-index: -1;
+    height: 100px;
+}
+
 
 .header_portfolio {
     color: #ffff;
@@ -31,7 +44,7 @@
 
 .header__nav-link {
     font-size: 18px;
-    color: #000;
+    color:#fff;
 }
 
 .logotype {
@@ -68,7 +81,7 @@
     }
 
     .header__nav-link {
-        color: black;
+        color: #fff;
         text-decoration: none;
         align-items: center;
     }
