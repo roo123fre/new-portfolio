@@ -184,3 +184,9 @@ input {
 .contacts__inner {
     display: flex;
 }
+
+@media (max-width:560px){
+    .name{
+        width: 240px;
+    }
+}
