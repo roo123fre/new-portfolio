@@ -13,7 +13,7 @@
     height: 60px;
     top: -70px;
     left: 0;
-    background-image: url('/icons/code.svg');
+    background-image: url(../icons/code.svg);
     background-repeat: no-repeat;
 }
 
@@ -28,7 +28,7 @@
     height: 60px;
     top: -70px;
     left: 0;
-    background-image: url('/icons/dev.svg');
+    background-image: url(../icons/dev.svg);
     background-repeat: no-repeat;
 }
 
@@ -43,7 +43,7 @@
     height: 60px;
     top: -70px;
     left: 0;
-    background-image: url('/icons/chat.svg');
+    background-image: url(../icons/chat.svg);
     background-repeat: no-repeat;
 }
 

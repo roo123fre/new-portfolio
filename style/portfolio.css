@@ -94,7 +94,7 @@
 }
 
 .portfolio__link:hover .portfolio__image::after {
-    background-image: url(/images/img1.png);
+    background-image: url(../images/img1.png);
 }
 
 @media (max-width:1240px) {}

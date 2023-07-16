@@ -53,7 +53,7 @@
     height: 44px;
     top: 21px;
     left: 0px;
-    background-image: url(./icons/instagram.svg);
+    background-image: url(../icons/instagram.svg);
     background-repeat: no-repeat;
 }
 
@@ -68,7 +68,7 @@
     height: 44px;
     top: 21px;
     left: 55px;
-    background-image: url(./icons/facebook.svg);
+    background-image: url(../icons/facebook.svg);
     background-repeat: no-repeat;
 }
 
@@ -83,7 +83,7 @@
     height: 40px;
     top: 21px;
     left: 105px;
-    background-image: url(./icons/telegram.svg);
+    background-image: url(../icons/telegram.svg);
     background-repeat: no-repeat;
 }
 
