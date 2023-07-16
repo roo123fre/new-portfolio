@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background-image: url('/images/bg-img.png');
+  background-image: url(/images/bg-img.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -70,7 +70,7 @@
   width: 37px;
   height: 22px;
   left: 48%;
-  background-image: url('/icons/arrow.svg');
+  background-image: url(/icons/arrow.svg);
   background-repeat: no-repeat;
 }
 
