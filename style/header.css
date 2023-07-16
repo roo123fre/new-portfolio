@@ -153,3 +153,15 @@
         transform: rotate(315deg);
     }
 }
+
+@media (max-width:370px){
+    .header__nav-list{
+        height: 50vh;
+        background-color: #d1b9b1;
+        padding: 20px 7px;
+    }
+    .logotype::before{
+        top: -10px;
+        left: 15px;
+    }
+}

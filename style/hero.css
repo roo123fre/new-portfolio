@@ -94,3 +94,9 @@
     font-size: 50px;
   }
 }
+
+@media (max-width:370px){
+  .hero__subtitle{
+    font-size: 35px;
+  }
+}

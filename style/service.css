@@ -115,3 +115,9 @@
         left: -80px;
     }
 }
+
+@media (max-width:370px){
+    .service__item{
+        margin: 0 auto;
+    }
+}

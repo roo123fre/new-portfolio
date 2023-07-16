@@ -190,3 +190,13 @@ input {
         width: 240px;
     }
 }
+
+@media (max-width:370px){
+    .information__name-home{
+        gap: 0px;
+    }
+
+    .information__button{
+        text-align: center;
+    }
+}

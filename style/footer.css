@@ -158,3 +158,9 @@
         margin-left: 40px;
     }
 }
+
+@media (max-width:370px){
+    .footer__logo{
+        padding: 40px 95px;
+    }
+}
