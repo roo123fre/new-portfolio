@@ -45,6 +45,12 @@
 .portfolio__image {
     width: 360px;
     height: 100%;
+    transform:scale(1);
+    transition:transform 0.1s linear;
+}
+
+.portfolio__image:hover{
+    transform: scale(1.2);
 }
 
 .portfolio__link {
