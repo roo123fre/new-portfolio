@@ -109,6 +109,7 @@
     max-width: 540px;
     width: 100%;
     margin-bottom: 10px;
+    align-self: flex-start;
 }
 
 input {
@@ -148,6 +149,7 @@ input {
     resize: vertical;
     margin-bottom: 40px;
     margin-top: 10px;
+    align-self: flex-start;
 }
 
 .comment::placeholder {
@@ -179,6 +181,8 @@ input {
     font-size: 18px;
     line-height: 130%;
     color: #ffffff;
+    align-self:flex-start;
+    border: none;
 }
 
 .contacts__inner {

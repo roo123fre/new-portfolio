@@ -50,7 +50,7 @@
     height: 80px;
     left: 30px;
     top: -100px;
-    background-image: url('/icons/works.svg');
+    background-image: url(../icons/works.svg);
     background-repeat: no-repeat;
 }
 
@@ -65,7 +65,7 @@
     height: 80px;
     left: 35px;
     top: -100px;
-    background-image: url('/icons/clients.svg');
+    background-image: url(../icons/clients.svg);
     background-repeat: no-repeat;
 }
 
@@ -80,7 +80,7 @@
     height: 80px;
     left: 45px;
     top: -100px;
-    background-image: url('/icons/coffee.svg');
+    background-image: url(../icons/coffee.svg);
     background-repeat: no-repeat;
 }
 
@@ -95,7 +95,7 @@
     height: 80px;
     left: 20px;
     top: -100px;
-    background-image: url('/icons/review.svg');
+    background-image: url(../icons/review.svg);
     background-repeat: no-repeat;
 }
 
