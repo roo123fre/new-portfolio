@@ -55,12 +55,12 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .service__item {
     max-width: 330px;
     width: 100%;
-    margin-right: 90px;
 }
 
 .service__text {

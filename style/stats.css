@@ -3,19 +3,46 @@
 }
 
 .stats__list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 15px;
     text-align: center;
 }
 
-.stats__count {
-    background-color: #dbdbed;
-    padding: 110px 30px 0 30px;
-    margin: 0 16px;
+.stats__item {
+    position: relative;
+    border: 0.1px solid #DBDBED;
+    background-color: #F6F6F8;
+    padding: 150px 10px 50px;
+    max-width: 280px;
+    width: 100%;
 }
 
-.feedbacks__count {
-    padding: 110px 40px 50px 40px;
+.stats__item::before {
+    content: '';
+    position: absolute;
+    width: 98px;
+    height: 80px;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+}
+
+.worked::before {
+    background-image: url(../icons/works.svg);
+}
+
+.clients::before {
+    background-image: url(../icons/clients.svg);
+}
+
+.coffee::before {
+    background-image: url(../icons/coffee.svg);
+}
+
+.feedbacks::before {
+    background-image: url(../icons/review.svg);
 }
 
 .stats__text {
@@ -37,66 +64,6 @@
     font-size: 44px;
     line-height: 100%;
     color: #333333;
-}
-
-.worked {
-    position: relative;
-}
-
-.worked::before {
-    content: "";
-    position: absolute;
-    width: 98px;
-    height: 80px;
-    left: 30px;
-    top: -100px;
-    background-image: url(../icons/works.svg);
-    background-repeat: no-repeat;
-}
-
-.clients {
-    position: relative;
-}
-
-.clients::before {
-    content: "";
-    position: absolute;
-    width: 92px;
-    height: 80px;
-    left: 35px;
-    top: -100px;
-    background-image: url(../icons/clients.svg);
-    background-repeat: no-repeat;
-}
-
-.coffee {
-    position: relative;
-}
-
-.coffee::before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    left: 45px;
-    top: -100px;
-    background-image: url(../icons/coffee.svg);
-    background-repeat: no-repeat;
-}
-
-.feedbacks {
-    position: relative;
-}
-
-.feedbacks::before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    left: 20px;
-    top: -100px;
-    background-image: url(../icons/review.svg);
-    background-repeat: no-repeat;
 }
 
 @media (max-width:560px) {
@@ -122,14 +89,16 @@
     }
 }
 
-@media (max-width:560px){
-    .contacts__inner{
+@media (max-width:560px) {
+    .contacts__inner {
         flex-wrap: wrap;
     }
-    .contacts__email{
+
+    .contacts__email {
         margin-bottom: 30px;
     }
-    .contacts__number{
+
+    .contacts__number {
         margin-bottom: 20px;
     }
 }
